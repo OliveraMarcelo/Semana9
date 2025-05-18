@@ -1,0 +1,14 @@
+/home/marceloo/ifts/poo/Semana9/bin/Debug/net9.0/Semana9
+/home/marceloo/ifts/poo/Semana9/bin/Debug/net9.0/Semana9.deps.json
+/home/marceloo/ifts/poo/Semana9/bin/Debug/net9.0/Semana9.runtimeconfig.json
+/home/marceloo/ifts/poo/Semana9/bin/Debug/net9.0/Semana9.dll
+/home/marceloo/ifts/poo/Semana9/bin/Debug/net9.0/Semana9.pdb
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.GeneratedMSBuildEditorConfig.editorconfig
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.AssemblyInfoInputs.cache
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.AssemblyInfo.cs
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.csproj.CoreCompileInputs.cache
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.dll
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/refint/Semana9.dll
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.pdb
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.genruntimeconfig.cache
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/ref/Semana9.dll
