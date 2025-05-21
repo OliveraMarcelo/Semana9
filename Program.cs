@@ -5,6 +5,7 @@ namespace Semana9
     {
         static void Main(string[] args)
         {
+            //CLASES ABSTRACTAS
             Console.WriteLine("Ejercicio 1 - Figuras");
             Cuadrado cuadrado = new Cuadrado(5);
             cuadrado.calcularArea();
@@ -39,6 +40,47 @@ namespace Semana9
                 a.MostrarTipo();
                 a.EscucharSonido();
                 Console.WriteLine();
+            }
+            //INTERFACES
+
+
+            string contenido = "Este es el informe de las personas encuestadas.";
+            IExportable[] exportadores = new IExportable[3];
+            exportadores[0] = new ExportadorExcel();
+            exportadores[1] = new ExportadorPDF();
+            exportadores[2] = new ExportadorCSV();
+            foreach (IExportable exportador in exportadores)
+            {
+                exportador.Exportar(contenido);
+            }
+
+
+
+        }
+        public interface IExportable
+        {
+            void Exportar(string contenido);
+        }
+        public class ExportadorExcel : IExportable
+        {
+            public void Exportar(string contenido)
+            {
+                Console.WriteLine($" Se exporta en formato Excel {contenido}");
+            }
+        }
+
+        public class ExportadorPDF : IExportable
+        {
+            public void Exportar(string contenido)
+            {
+                Console.WriteLine($" Se exporta en formato PDF {contenido}");
+            }
+        }
+        public class ExportadorCSV : IExportable
+        {
+            public void Exportar(string contenido)
+            {
+                Console.WriteLine($" Se exporta en formato CSV {contenido}");
             }
         }
     }
