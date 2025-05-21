@@ -29,6 +29,17 @@ namespace Semana9
                 v.Acelerar();
                 Console.WriteLine();
             }
+            Console.WriteLine("Ejercicio 4 - Animales");
+            Animal[] animales = new Animal[3];
+            animales[0] = new Loro();
+            animales[1] = new Gato();
+            animales[2] = new Leon();
+            foreach (Animal a in animales)
+            {
+                a.MostrarTipo();
+                a.EscucharSonido();
+                Console.WriteLine();
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Semana9
 
             public override void MostrarTipo()
             {
-                Console.WriteLine("Soy una moto");
+                base.MostrarTipo();
             }
         }
     }

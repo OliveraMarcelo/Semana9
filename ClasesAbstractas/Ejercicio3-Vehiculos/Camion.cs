@@ -11,7 +11,7 @@ namespace Semana9
             }
             public override void MostrarTipo()
             {
-                Console.WriteLine("Soy un camion");
+                base.MostrarTipo();
             }
         }
     }

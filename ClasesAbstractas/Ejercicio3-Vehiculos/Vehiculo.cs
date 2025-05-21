@@ -6,7 +6,9 @@ namespace Semana9
         public abstract class Vehiculo
         {
             public abstract void Arrancar();
-            public abstract void MostrarTipo();
+            public virtual void MostrarTipo() {
+                Console.WriteLine(this.GetType().Name);
+            }
             public void Acelerar()
             {
                 Console.WriteLine("Aceleramos o khe!");

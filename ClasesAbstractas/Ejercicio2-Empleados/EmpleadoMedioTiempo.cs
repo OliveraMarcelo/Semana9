@@ -5,7 +5,7 @@ namespace Semana9
     {
         public double bonoExtra = 700;
         public bool extra = false;
-        public EmpleadoMedioTiempo(string nombre, double sueldoBase, bool extra) : base(nombre, sueldoBase)
+        public EmpleadoMedioTiempo(string nombre, double sueldoBase, bool extra) 
         {
             this.nombre = nombre;
             this.sueldoBase = sueldoBase;

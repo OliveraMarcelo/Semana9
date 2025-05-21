@@ -13,8 +13,7 @@ namespace Semana9
         public override void calcularArea()
         {
             double area = this.baseTriangulo * this.altura / 2;
-            this.area = area;
-            Console.WriteLine($"El área del triángulo es: {this.area}");
+            Console.WriteLine($"El área del triángulo es: {area}");
         }
     }
 }

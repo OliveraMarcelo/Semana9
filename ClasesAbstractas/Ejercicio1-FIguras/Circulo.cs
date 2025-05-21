@@ -12,8 +12,7 @@ namespace Semana9
         {
             double radio = Convert.ToDouble(this.radio);
             double area = Math.PI * Math.Pow(radio, 2);
-            this.area = area;
-            Console.WriteLine($"El área del círculo es: {this.area}");
+            Console.WriteLine($"El área del círculo es: {area}");
         }
     }
 }

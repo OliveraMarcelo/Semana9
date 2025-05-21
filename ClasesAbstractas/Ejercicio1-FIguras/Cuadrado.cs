@@ -10,8 +10,8 @@ namespace Semana9
         }
         public override void calcularArea()
         {
-            this.area = lado * lado;
-            Console.WriteLine($"El área del cuadrado es: {this.area}");
+            double area = lado * lado;
+            Console.WriteLine($"El área del cuadrado es: {area}");
         }
     }
 }
