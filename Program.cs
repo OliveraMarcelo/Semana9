@@ -1,7 +1,7 @@
 ﻿
 namespace Semana9
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
@@ -19,60 +19,15 @@ namespace Semana9
             empleadoMedioTiempo.calcularSueldo();
             Console.WriteLine("Ejercicio 3 - Vehiculos");
             Vehiculo[] vehiculos = new Vehiculo[3];
-              vehiculos[0] = new Auto();
-              vehiculos[1] = new Moto();
-              vehiculos[2] = new Camion();
-              foreach (Vehiculo v in vehiculos)
-              {
-                  v.MostrarTipo();
-                  v.Arrancar();
-                  Console.WriteLine();
-              }
-        }
-        public abstract class Vehiculo
-        {
-            public abstract void Arrancar();
-            public abstract void MostrarTipo();
-            public void Acelerar()
+            vehiculos[0] = new Auto();
+            vehiculos[1] = new Moto();
+            vehiculos[2] = new Camion();
+            foreach (Vehiculo v in vehiculos)
             {
-                Console.WriteLine("Aceleramos o khe!");
-            }
-        }
-        public class Auto : Vehiculo
-        {
-            public override void Arrancar()
-            {
-                Console.WriteLine("Arranca la Auto");
-            }
-
-            public override void MostrarTipo()
-            {
-                Console.WriteLine("Soy un Auto");
-            }
-        }
-        public class Moto : Vehiculo
-        {
-            public override void Arrancar()
-            {
-                Console.WriteLine("Arranca la moto");
-
-
-            }
-
-            public override void MostrarTipo()
-            {
-                Console.WriteLine("Soy una moto");
-            }
-        }
-        public class Camion : Vehiculo
-        {
-            public override void Arrancar()
-            {
-                Console.WriteLine("Arranca Camion");
-            }
-            public override void MostrarTipo()
-            {
-                Console.WriteLine("Soy un camion");
+                v.MostrarTipo();
+                v.Arrancar();
+                v.Acelerar();
+                Console.WriteLine();
             }
         }
     }

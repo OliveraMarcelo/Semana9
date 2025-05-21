@@ -12,3 +12,4 @@
 /home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.pdb
 /home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.genruntimeconfig.cache
 /home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/ref/Semana9.dll
+/home/marceloo/ifts/poo/Semana9/obj/Debug/net9.0/Semana9.sourcelink.json
