@@ -57,31 +57,5 @@ namespace Semana9
 
 
         }
-        public interface IExportable
-        {
-            void Exportar(string contenido);
-        }
-        public class ExportadorExcel : IExportable
-        {
-            public void Exportar(string contenido)
-            {
-                Console.WriteLine($" Se exporta en formato Excel {contenido}");
-            }
-        }
-
-        public class ExportadorPDF : IExportable
-        {
-            public void Exportar(string contenido)
-            {
-                Console.WriteLine($" Se exporta en formato PDF {contenido}");
-            }
-        }
-        public class ExportadorCSV : IExportable
-        {
-            public void Exportar(string contenido)
-            {
-                Console.WriteLine($" Se exporta en formato CSV {contenido}");
-            }
-        }
     }
 }
