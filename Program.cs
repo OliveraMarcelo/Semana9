@@ -42,8 +42,7 @@ namespace Semana9
                 Console.WriteLine();
             }
             //INTERFACES
-
-
+            Console.WriteLine("Ejercicio 1 - Interfaz exportador");
             string contenido = "Este es el informe de las personas encuestadas.";
             IExportable[] exportadores = new IExportable[3];
             exportadores[0] = new ExportadorExcel();
@@ -53,9 +52,16 @@ namespace Semana9
             {
                 exportador.Exportar(contenido);
             }
-
-
-
+            Console.WriteLine("Ejercicio 2 - Interfaz IVehiculo");
+            IVehiculo[] ivehiculos = new IVehiculo[3];
+            ivehiculos[0] = new CAuto();
+            ivehiculos[1] = new CMoto();
+            ivehiculos[2] = new CBicicleta();
+            foreach (IVehiculo v in ivehiculos)
+            {
+                v.Conducir();
+                Console.WriteLine();
+            }
         }
     }
 }
