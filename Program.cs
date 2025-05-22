@@ -63,5 +63,31 @@ namespace Semana9
                 Console.WriteLine();
             }
         }
+        public interface IApiRest
+        {
+            public void Get(int id);
+            public void Post(string nuevoElemento);
+            public void Put(int id, string cambio);
+            public void Delete(int id);
+        }
+        public class Clientes : IApiRest
+        {
+            public void Get(int id)
+            {
+                Console.WriteLine($"Obteniendo cliente con ID: {id}");
+            }
+            public void Post(string nuevoElemento)
+            {
+                Console.WriteLine($"Agregando nuevo cliente: {nuevoElemento}");
+            }
+            public void Put(int id, string cambio)
+            {
+                Console.WriteLine($"Actualizando cliente con ID: {id} a {cambio}");
+            }
+            public void Delete(int id)
+            {
+                Console.WriteLine($"Eliminando cliente con ID: {id}");
+            }
+        }
     }
 }
